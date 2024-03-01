@@ -1,0 +1,253 @@
+@import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.css);
+
+*{
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  box-sizing: border-box;
+}
+body{
+  background-color: antiquewhite;
+}
+.navbar{
+  position: scroll;
+  background-color: transparent;
+  width: 100%;
+  padding: 30px 0;
+  top: 0;
+  z-index: 100;
+  line-height: 20px;
+}
+.inner-width{
+  max-width: 1300px;
+  margin: auto;
+  padding: 0 60px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.logo{
+  font-size: 40px;
+  font-weight: 100;
+  font-family: 'Great Vibes',sans-serif;
+  color: #222222;
+  cursor: pointer;
+  font-weight: bold;
+}
+.navbar-menu a{
+  font-size: 13px;
+  font-weight: 500;
+  font-family: 'Raleway',sans-serif;
+  color: #222222;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin-left: 35px;
+  display: inline-block;
+  font-weight: bold;
+}
+.navbar-menu a::after{
+  content: '';
+  display: block;
+  width: 0;
+  height: 1.8px;
+  background-color: #de6900;
+  transition: width .3s;
+}
+.navbar-menu a:hover::after{
+  width: 100%;
+}
+.intro {
+  background-image: url('images/cake2.jpeg');
+  background-size: cover;
+  background-position: center;
+  min-height: 400px;
+  text-align: center;
+  color: black;
+  padding-top: 100px;                                                           
+}
+
+.intro h2 {
+  font-size: 50px;
+  margin-top: 10px;
+  margin-left: 15%;
+}
+
+.intro p {
+  font-size: 20px;
+  
+  text-align: center;
+}
+.intro h3{
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  margin-left:15%;
+  color: darkslategrey;
+  font-size: 20px;
+  margin-top: 1%;
+}
+
+.button{
+    display:inline-block;
+    padding: 10px 20px;
+    background-color:red;
+    color:white;
+    text-decoration:none;
+    border-radius:5px;
+    margin-top:30px;
+    margin-left:8px;
+    width:12%;
+    
+}
+
+
+.wrapper{
+  margin:150px auto;
+  width:70%;
+}
+.text-box{
+  color:black;
+}
+
+.text-box h2{
+  font-size:40px;
+  margin-right:2px;
+}
+.text-box p{
+  font-size: 18px;
+  margin-top: 5px;
+}
+
+
+img{
+
+  float:right;
+  border:3px solid white;
+  border-radius:none;
+  height: 300px;
+  width:30%;
+  margin-left: 100px;
+  
+}
+
+.heading{
+  text-align:center;
+  font-size:40px;
+  color:black;
+  margin-bottom: 1%;
+  margin-right: 10%;
+}
+.img-gallery{
+  width:80%;
+  margin: 100px auto 50px;
+  display:grid;
+  grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+  grid-gap:30px;
+  float: left;
+}
+.img-gallery img{
+  width:100%;
+  cursor:pointer;
+  border-radius:40px;
+
+}
+.img-gallery img:hover{
+  transform:scale(0.8)rotate(-15deg);
+  border-radius:40px;
+  box-shadow: 0 32px 75px rgba(68,77,136,0.2);
+}
+
+footer {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 30px;
+  margin-top: 50%
+}
+
+footer p {
+  font-size: 18px;
+  
+  margin-right:18%;
+  margin-left: 15%;
+  
+}
+
+footer a {
+  color: #fff;
+  text-decoration: none;
+}
+
+
+footer a:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 1024px) {
+  
+  .navbar {
+    padding: 20px 0;
+  }
+
+  .inner-width {
+    padding: 0 10px;
+  }
+
+  .logo {
+    font-size: 28px;
+  }
+
+  .navbar-menu a {
+    font-size: 10px;
+    margin-left: 15px;
+  }
+
+  .intro {
+    min-height: 250px;
+    padding: 60px 0;
+  }
+
+  .intro h2 {
+    font-size: 28px;
+  }
+
+  .intro p {
+    font-size: 14px;
+  }
+
+  .intro h3 {
+    font-size: 14px;
+  }
+
+  .cta-button {
+    padding: 6px 12px;
+    margin-top: 16px;
+  }
+
+  .wrapper {
+    margin: 30px auto;
+    width: 95%;
+  }
+
+  .text-box h2 {
+    font-size: 24px;
+  }
+
+  .text-box p {
+    font-size: 12px;
+  }
+
+  img {
+    margin: 10px auto;
+  }
+
+  .heading {
+    font-size: 28px;
+    margin-bottom: 5px;
+  }
+
+  .img-gallery {
+    margin: 30px auto 20px;
+    grid-gap: 10px;
+  }
+}
+
+
